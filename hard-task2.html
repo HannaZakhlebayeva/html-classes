@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Вложенные списки</title>
+	<style>
+		.ord {
+			font-weight: bold;
+		}
+		span {
+			color: red;
+		}
+		dl {
+			font-weight: bold;
+			font-style: italic;
+			padding-left: 15px;
+					}
+	</style>
+</head>
+<body>
+	<h1>Ключевые слова</h1>
+	<ol type="I">
+		<li class="ord">A</li>
+			<ul type="disc">
+				<li><a href="#a1">abstract</a></li>
+			</ul>
+		<li class="ord">B</li>
+			<ul type="disc">
+				<li><a href="#b1">boolean</a></li>
+				<li><a href="#b2">break</a></li>
+				<li><a href="#b3">byte</a></li>	
+			</ul>
+		<li class="ord">C</li>
+			<ul type="disc">
+				<li><a href="#c1">case</a></li>
+				<li><a href="#c2">catch</a></li>
+				<li><a href="#c3">char</a></li>
+				<li><a href="#c4">class</a></li>
+				<li><a href="#c5">const</a></li>
+				<li><a href="#c6">continue</a></li>	
+			</ul>
+	</ol>
+	<hr>
+	<h2>Список определений</h2>
+		<dl id="a1">abstract</dl>
+			<dd>In <b>Java</b> abstract keyword can be used with classes and methods.<br>
+			<code>Abstract class:</code> is a restricted class that cannot be used to create objects (to access it, it must be inherited from another class).<br>
+			<code>Abstract method:</code> can only be used in an abstract class, and it does not have a body. The body is provided by the subclass (inherited from).</dd>
+		<dl id="b1">boolean</dl>
+			<dd><code>boolean</code> keyword is used to declare a variable as a boolean type, which represents only either <span>true</span> or <span>false</span>.</dd>
+		<dl id="b2">break</dl>
+			<dd><code>break</code> keyword is used to terminate for, <code>while</code>, or <code>do-while</code> loop; it may also be used to terminate a <code>switch</code> statement as well.</dd>
+		<dl id="b3">byte</dl>
+			<dd><code>byte</code> keyword is used to declare a <span>variable as a numeric</span> type; can hold an 8-bit integer number which ranges from -128 to 127.</dd>
+		<dl id="c1">case</dl>
+			<dd><code>case</code> keyword is used with <code>switch</code> keyword in <b>Java</b> to specify a code block which needs to be executed in case of a specific value is passed in switch statement; it is followed by the value to be compared to and a colon.</dd>
+		<dl id="c2">catch</dl>
+			<dd>catch is used in conjunction with a <code>try</code> block (and an optional finally block); the statements in the <code>catch</code> block specify what to do if a specific type of exception is thrown by the <code>try</code> block.</dd>
+		<dl id="c3">char</dl>
+			<dd><code>char</code> keyword is used to declared a <span>variable as a character</span> type; a <code>char</code> variable represents a single character, can be created from character literals, numeric representation and unicode escape sequences. e.g.</dd>
+		<dl id="c4">class</dl>
+			<dd><code>class</code> keyword is used to declare a class or define a class.</dd>
+		<dl id="c5">const</dl>
+			<dd>in <b>Java</b>, <code>const</code> is a reserved keyword and <span>not being used</span>.</dd>
+		<dl id="c6">continue</dl>
+			<dd><code>continue</code> keyword is used to skip the remainder of the loop statements (inside which loop it is used) and continues with the next iteration of loop.</dd>
+</body>
+</html>
