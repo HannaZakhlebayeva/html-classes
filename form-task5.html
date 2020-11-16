@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Задача №11.7</title>
+    </head>
+<body>
+<form action="php/registration.php" mehtod="POST" name="reg_form">
+    <label for="comment"> Оставить сообщение: </label> <br><br>
+        <textarea placeholder="Введите сообщение размером в 7 строк по 40 символов" id="comment" cols="40" rows="7" wrap="hard"></textarea>
+        <br><br>
+        <!--Закрыла тег <textarea>, текст внутри textarea поместила в placeholder,
+            убрала перенос строки между <textarea> и </textarea>, иначе placeholder не виден в браузере-->
+        <button type="submit" name="submit_button">Отправить</button>
+        <!--исправила "tipe" на "type"; убрала disabled - кнопка доступна-->
+</form>
+</body>
+</html>
