@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Форма 4</title>
+        <style>
+            form {font-family: Helvetica, Arial, sans-serif; font-size: 14px;}
+            .field_name {font-weight: bold;}
+            legend {font-size: 16px; font-weight: bold; color: #00008B; text-align: center;}
+            fieldset {width: 40%;}
+            p {padding-left: 10px;}
+        </style>
+    </head>
+<body>
+    <form name="registration_form" action="#">
+    <fieldset>
+        <legend>Форма регистрации</legend>
+    <p>
+        <label for="f_name" class="field_name">Имя:</label>
+        <input type="text" name="first_name" id="f_name" placeholder="введите ваше имя" required>
+        <label for="s_name" class="field_name">Фамилия:</label>
+        <input type="text" name="second_name" id="s_name" placeholder="введите вашу фамилию" required>
+    </p>
+    <p>
+        <span class="field_name">Пол:</span>
+        <label for="male"><input type="radio" id="male" name="gender" value="male"><span>М</span></label>
+        <label for="female"><input type="radio" id="female" name="gender" value="female"><span>Ж</span></label>
+    </p>
+    <p>
+        <span class="field_name">Владение языками:</span>
+        <label for="bel"><input type="checkbox" id="bel" name="belarusian" checked><span>белорусский</span></label>
+        <label for="rus"><input type="checkbox" id="rus" name="rusian" checked><span>русский</span></label>
+        <label for="en"><input type="checkbox" id="en" name="english" checked><span>английский</span></label>
+    </p>
+    <p>
+        <span class="field_name">Страна проживания:</span>
+        <select name="country">
+            <option>Австралия</option>
+            <option>Австрия</option>
+            <option>Англия</option>
+            <option selected>Беларусь</option>
+            <option>Болгария</option>
+            <option>Венгрия</option>
+            <option>Греция</option>
+            <option>Грузия</option>
+            <option>Дания</option>
+            <option>Китай</option>
+            <option>Литва</option>
+            <option>Латвия</option>
+            <option>Молдова</option>
+            <option>Нидерланды</option>
+            <option>Норвегия</option>
+            <option>Польша</option>
+            <option>Португалия</option>
+            <option>Россия</option>
+            <option>США</option>
+            <option>Тайланд</option>
+            <option>Украина</option>
+            <option>Франция</option>
+            <option>Финляндия</option>
+            <option>Хорватия</option>
+            <option>Чехия</option>
+            <option>Черногория</option>
+            <option>Эстония</option>
+            <option>Япония</option>
+        </select>
+        <input type="text" name="country" placeholder="Другая">
+    </p>
+    <p>
+        <span class="field_name">Фото профиля:</span>
+        <input type="file" name="pics" accept="image/*">
+    </p>
+    </fieldset>
+    <p><input type="submit" name="registration" value="Зарегистрироваться"></p>
+    </form>
+</body>
+</html>
