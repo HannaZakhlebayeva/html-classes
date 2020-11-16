@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Форма 1</title>
+        <style>
+            form {font-family: Helvetica, Arial, sans-serif; font-size: 14px;}
+            .field_name {font-weight: bold;}
+        </style>
+    </head>
+<body>
+    <form name="registration_form" action="#">
+        <p>
+        <label for="f_name" class="field_name">Имя:</label>
+        <input type="text" name="first_name" id="f_name" placeholder="введите ваше имя" required>
+        <label for="s_name" class="field_name">Фамилия:</label>
+        <input type="text" name="second_name" id="s_name" placeholder="введите вашу фамилию" required>
+        </p>
+        <p><input type="submit" name="registration" value="Зарегистрироваться"></p>
+    </form>
+</body>
+</html>
