@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Регистрация</title>
+        <style>
+            .head {border-bottom: 1px solid #FFF; padding-top: 30px; padding-bottom: 15px;}
+            div {padding-left: 25px;}
+            span, label {color: #FFF}
+            span {font-size: 25px;}
+            form {
+                font-family: Arial, Helvetica, sans-serif;
+                width: 470px; 
+                border: 2px solid #0075B4;
+                background-color: #0690CF;
+                }
+            button {
+                background-color: #FCDF84;
+                padding: 5px 5px 5px 5px;
+                margin-top: 15px;
+                margin-bottom: 20px;
+                }
+            .pass {display: inline-block;}
+            #email {width: 375px;}
+        </style>
+    </head>
+    <form action="#" name="reg">
+    <div class="head">
+        <span>Регистрация</span>
+    </div>
+    <div>
+        <p><label for="email">E-mail</label><br>
+        <input type="email" id="email" name="email" required></p>
+    </div>
+    <div class="pass">
+        <p><label for="pass">Пароль</label><br>
+        <input type="password" id="pass" name="password" required onFocus="this.select();"></p>
+    </div>
+    <div class="pass">
+        <label for="check">Ещё раз</label><br>
+        <input type="password" id="check" name="pass_check" required onFocus="this.select();">
+    </div>
+    <div>
+        <button type="submit" onclick="CheckPass()">Отправить</button>
+    </div>
+    </form>
+    <script>
+        function CheckPass () {
+                if ((document.reg.pass.value==document.reg.pass.defaultValue)||(document.reg.check.value==document.reg.check.defaultValue))
+                alert("Введите пароль")
+            else if (document.reg.pass.value==document.reg.check.value)
+                alert("Регистрация проведена успешно")
+            else
+                alert ("Ошибка при вводе пароля")
+        }
+    </script>
+</html>
