@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Анкета Web-разработчика</title>
+        <style>
+            h1 {font-size: 28px;}
+            table, tr, td {border: 2px solid black; border-collapse: collapse; font-size: 14px;}
+            table {width: 500px;}
+            .text {width: 150px; vertical-align: top; padding-top: 5px; padding-left: 3px; background-color: #D0D9C8;}
+            .forms {padding-left: 3px; padding-top: 3px; padding-bottom: 3px; background-color: #C0C0C0;}
+            div {border-top: 2px solid #BFC1BC; margin-top: 10px; padding-top: 10px; width: 500px;}
+        </style>
+    </head>
+<body>
+    <h1>Анкета Web-разработчика</h1>
+    <form name="profile" action="#">
+    <table>
+        <tr>
+            <td class="text">Регистрационное имя</td>
+            <td class="forms"><input type="text" name="name" required></td>
+        </tr>
+        <tr>
+            <td class="text">Пароль</td>
+            <td class="forms">
+                <input type="password" name="pass" required>
+                <input type="password" name="repass" required><span>: подтвердите пароль</span>
+            </td>
+        </tr>
+        <tr>
+            <td class="text">Ваша специализация</td>
+            <td class="forms"><select name="spec"required>
+                <option>Web-мастер</option>
+                <option>Frontend-разработчик</option>
+                <option>Верстальщик</option>
+            </td>
+        </tr>
+        <tr>
+            <td class="text">Пол</td>
+            <td class="forms">
+            <label for="m"><input type="radio" name="gender" id="m" value="male" checked>М</label>
+            <label for="f"><input type="radio" name="gender" id="f" value="female">Ж</label>
+            </td>
+        </tr>
+        <tr>
+            <td class="text">Ваши навыки</td>
+            <td class="forms">
+            <label for="ht"><input type="checkbox" name="skills" id="ht">знание HTML и CSS</label><br>
+            <label for="perl"><input type="checkbox" name="skills" id="perl">знание Perl</label><br>
+            <label for="asp"><input type="checkbox" name="skills" id="asp">знание ASP</label><br>
+            <label for="ap"><input type="checkbox" name="skills" id="ap">знание Adobe Photoshop</label><br>
+            <label for="java"><input type="checkbox" name="skills" id="java">знание JAVA<br>
+            <label for="js"><input type="checkbox" name="skills" id="js">знание JavaScript</label><br>
+            <label for="flash"><input type="checkbox" name="skills" id="flash">знание Flash</label><br>
+            </td>
+        </tr>
+        <tr>
+            <td class="text">Дополнительные <br> сведения о себе</td>
+            <td class="forms"><textarea id="about" cols="30" rows="5" wrap="hard"></textarea></td>
+        </tr>
+    </table>
+<div>
+    <button type="submit">зарегистрировать</button>
+    <button type="reset">очистить форму</button>
+</div>
+</form>
+</body>
+</html>
